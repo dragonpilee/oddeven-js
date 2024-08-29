@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <h1 class="title">Odd or Even Game</h1>
+        <div class="mode-selection">
+            <button id="single-player-btn">Single Player</button>
+            <button id="two-player-btn">Two Player</button>
+        </div>
+        <div class="game-area">
+            <!-- Single Player Mode -->
+            <div class="input-area" id="single-player-mode">
+                <input type="text" id="user-name" placeholder="Enter your name">
+                <input type="number" id="user-number" placeholder="Enter a number (1-10)">
+                <button id="play-single">Play</button>
+            </div>
+            <!-- Two Player Mode - Player 1 -->
+            <div class="input-area" id="player1-input">
+                <input type="text" id="player1-name" placeholder="Player 1: Enter your name">
+                <input type="number" id="player1-number" placeholder="Player 1: Enter a number (1-10)">
+                <button id="next-to-player2">Next</button>
+            </div>
+            <!-- Two Player Mode - Player 2 -->
+            <div class="input-area" id="player2-input">
+                <input type="text" id="player2-name" placeholder="Player 2: Enter your name">
+                <input type="number" id="player2-number" placeholder="Player 2: Enter a number (1-10)">
+                <button id="play-two">Play</button>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+        <button id="restart-btn" class="restart">Restart Game</button>
+    </div>
+
+    <footer class="footer">
+        Designed with love by Alan for BVM College NAAC visit event
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
